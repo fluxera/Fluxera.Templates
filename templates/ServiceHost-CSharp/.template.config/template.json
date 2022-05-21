@@ -3,14 +3,14 @@
 	"author": "Fluxera",
 	"classifications": [
 		"Common",
-		"Service",
-		"Host"
+		"Host",
+		"Service"
 	],
 	"name": "Service Host",
 	"description": "A project for creating a service host that targets .NET",
-	"groupIdentity": "Fluxera.Common.Service.Host",
+	"groupIdentity": "Fluxera.Common.Host.Service",
 	"precedence": "9000",
-	"identity": "Fluxera.Common.Service.Host.CSharp",
+	"identity": "Fluxera.Common.Host.Service.CSharp",
 	"shortName": "servicehost",
 	"tags": {
 		"language": "C#",
