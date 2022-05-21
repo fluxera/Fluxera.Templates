@@ -11,7 +11,7 @@
 	"groupIdentity": "Fluxera.Common.Service.Host",
 	"precedence": "9000",
 	"identity": "Fluxera.Common.Service.Host.CSharp",
-	"shortName": "host",
+	"shortName": "servicehost",
 	"tags": {
 		"language": "C#",
 		"type": "project"
