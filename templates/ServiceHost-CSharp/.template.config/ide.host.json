@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json.schemastore.org/vs-2017.3.host",
+	"icon": "icon.png",
+	"tags": [
+		{
+			"type": "projectType",
+			"add": [],
+			"remove": [ "Common" ]
+		}
+	],
+	"symbolInfo": [
+		{
+			"id": "ModuleName",
+			"name": {
+				"text": "Enter the module name"
+			},
+			"description": {
+				"text": "Sets the name of the module for the library."
+			},
+			"isVisible": true,
+			"defaultValue": "Module1"
+		}
+	]
+}

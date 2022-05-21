@@ -1,0 +1,71 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Fluxera",
+	"classifications": [
+		"Common",
+		"Library",
+		"Component"
+	],
+	"name": "Component Library Solution",
+	"description": "A project for creating a component library solution that targets .NET",
+	"groupIdentity": "Fluxera.Common.Library.Component",
+	"precedence": "9000",
+	"identity": "Fluxera.Common.Library.Component.CSharp",
+	"shortName": "componentlib",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"sourceName": "Solution1",
+	"preferNameDirectory": true,
+	"defaultName": "Component1",
+	"symbols": {
+		"Framework": {
+			"type": "parameter",
+			"description": "The target framework for the module.",
+			"datatype": "choice",
+			"choices": [
+				{ 
+					"choice": "net6.0",
+					"description": "Target .NET 6.0"
+				}
+			],
+			"replaces": "net6.0",
+			"defaultValue": "net6.0"
+		},
+		"CompanyName": {
+			"type": "parameter",
+			"datatype": "text",
+			"displayName": "Company name",
+			"description": "The name of the company.",
+			"isRequired": true,
+			"replaces": "{company}"
+		},
+		"ProductName": {
+			"type": "parameter",
+			"datatype": "text",
+			"displayName": "Product name",
+			"description": "The name of the product.",
+			"isRequired": true,
+			"replaces": "{product}"
+		},
+		"HostIdentifier": {
+			"type": "bind",
+			"binding": "HostIdentifier"
+		}
+	},
+	"postActions": [
+		{
+			"id": "restore",
+			"condition": "(!skipRestore)",
+			"description": "Restore NuGet packages required by this project.",
+			"manualInstructions": [
+				{
+					"text": "Run 'dotnet restore'"
+				}
+			],
+			"actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+			"continueOnError": true
+		}
+	]
+}

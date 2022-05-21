@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<RootNamespace Condition="'$(name)' != '$(name{-VALUE-FORMS-}safe_namespace)'">Project1</RootNamespace>		
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Fluxera.Extensions.Hosting.Abstractions" Version="6.0.9" />
+		<PackageReference Include="Fluxera.Extensions.Hosting.Modules.Configuration" Version="6.0.1" />
+		<PackageReference Include="Fluxera.Guards" Version="6.0.22" />
+		<PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
+	</ItemGroup>
+
+</Project>

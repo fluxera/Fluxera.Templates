@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard1.0</TargetFramework>	
+		<PackageType>Template</PackageType>
+		<PackageVersion>1.0.0</PackageVersion>
+		<PackageId>Fluxera.Templates</PackageId>
+		<Authors>Matthias Gernand</Authors>
+		<Description>Templates to use when creating an application for Fluxera.</Description>
+		<PackageTags>dotnet-new;templates;fluxera</PackageTags>
+		<PackageProjectUrl>https://github.com/fluxera/Fluxera.Templates</PackageProjectUrl>
+		<OutputPath>$(TemplatesDir)</OutputPath>
+		<PackageIcon>icon.png</PackageIcon>
+		<IncludeBuildOutput>False</IncludeBuildOutput>
+        <IncludeSource>False</IncludeSource>
+        <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+        <EnableDefaultItems>False</EnableDefaultItems>
+        <UsingToolTemplateLocalizer>False</UsingToolTemplateLocalizer>    
+		<IsPackable>True</IsPackable>
+        <NoPackageAnalysis>True</NoPackageAnalysis>
+        <SuppressDependenciesWhenPacking>True</SuppressDependenciesWhenPacking>
+		<language>en-US</language>
+		<NoWarn>$(NoWarn);NU5128</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Remove="Microsoft.NETCore.App" />	
+        <Content Include="templates\**" Exclude="templates\**\bin\**">
+            <PackagePath>templates</PackagePath>
+        </Content>
+		<Compile Remove="**\*" />
+		<None Include="icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>

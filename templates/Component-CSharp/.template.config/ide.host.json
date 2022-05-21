@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json.schemastore.org/vs-2017.3.host",
+	"icon": "icon.png",
+	"tags": [
+		{
+			"type": "projectType",
+			"add": [],
+			"remove": [ "Common" ]
+		}
+	],
+	"symbolInfo": [
+		{
+			"id": "CompanyName",
+			"name": {
+				"text": "Enter the company name"
+			},
+			"description": {
+				"text": "Sets the name of the company for the copyright notice."
+			},
+			"isVisible": true
+		},
+		{
+			"id": "ProductName",
+			"name": {
+				"text": "Enter the product name"
+			},
+			"description": {
+				"text": "Sets the name of the product."
+			},
+			"isVisible": true
+		}
+	]
+}
