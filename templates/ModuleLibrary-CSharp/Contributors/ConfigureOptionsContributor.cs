@@ -7,6 +7,6 @@
 	internal sealed class ConfigureOptionsContributor : ConfigureOptionsContributorBase<Module1ModuleOptions>
 	{
 		/// <inheritdoc />
-		public override string SectionName => "{module}";
+		public override string SectionName => "Module1";
 	}
 }

@@ -6,6 +6,9 @@
 	using JetBrains.Annotations;
 	using Project1.Contributors;
 
+	/// <summary>
+	///     A module.
+	/// </summary>
 	[PublicAPI]
 	[DependsOn(typeof(ConfigurationModule))]
 	public sealed class Module1Module : ConfigureServicesModule

@@ -1,4 +1,4 @@
-﻿namespace Solution1.Application
+﻿namespace Solution1.Domain
 {
 	using JetBrains.Annotations;
 
@@ -6,7 +6,7 @@
 	///     The options of the module.
 	/// </summary>
 	[PublicAPI]
-	public sealed class Solution1ApplicationModuleOptions
+	public sealed class Solution1DomainOptions
 	{
 	}
 }

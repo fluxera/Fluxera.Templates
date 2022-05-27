@@ -1,4 +1,4 @@
-﻿namespace Solution1.HttpApi
+﻿namespace Solution1.HttpClient
 {
 	using JetBrains.Annotations;
 
@@ -6,7 +6,7 @@
 	///     The options of the module.
 	/// </summary>
 	[PublicAPI]
-	public sealed class Solution1HttpApiModuleOptions
+	public sealed class Solution1HttpClientOptions
 	{
 	}
 }

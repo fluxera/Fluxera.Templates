@@ -4,9 +4,9 @@
 	using JetBrains.Annotations;
 
 	[UsedImplicitly]
-	internal sealed class ConfigureOptionsContributor : ConfigureOptionsContributorBase<Solution1ApplicationModuleOptions>
+	internal sealed class ConfigureOptionsContributor : ConfigureOptionsContributorBase<Solution1ApplicationOptions>
 	{
 		/// <inheritdoc />
-		public override string SectionName => "{component}";
+		public override string SectionName => "Solution1";
 	}
 }

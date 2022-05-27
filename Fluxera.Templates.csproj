@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard1.0</TargetFramework>	
 		<PackageType>Template</PackageType>
-		<PackageVersion>1.0.0</PackageVersion>
+		<PackageVersion>1.0.1</PackageVersion>
 		<PackageId>Fluxera.Templates</PackageId>
 		<Authors>Matthias Gernand</Authors>
 		<Description>Templates to use when creating an application for Fluxera.</Description>
@@ -34,6 +34,7 @@
         </Content>
 		<Compile Remove="**\*" />
 		<None Include="icon.png" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>
