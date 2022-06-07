@@ -4,7 +4,7 @@
 	using JetBrains.Annotations;
 
 	[UsedImplicitly]
-	internal sealed class ConfigureOptionsContributor : ConfigureOptionsContributorBase<Module1ModuleOptions>
+	internal sealed class ConfigureOptionsContributor : ConfigureOptionsContributorBase<Module1Options>
 	{
 		/// <inheritdoc />
 		public override string SectionName => "Module1";
